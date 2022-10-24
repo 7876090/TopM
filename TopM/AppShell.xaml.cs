@@ -1,4 +1,4 @@
-﻿using TopM.Pages;
+﻿using TopM.Views;
 
 namespace TopM;
 
@@ -9,6 +9,6 @@ public partial class AppShell : Shell
 		InitializeComponent();
 
 		Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
-		Routing.RegisterRoute(nameof(ManageOrdersPage), typeof(ManageOrdersPage));
+		Routing.RegisterRoute(nameof(ManageOrdersView), typeof(ManageOrdersView));
 	}
 }

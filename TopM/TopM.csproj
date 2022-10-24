@@ -53,13 +53,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Pages\ManageOrdersPage.xaml.cs">
-	    <DependentUpon>ManageOrdersPage.xaml</DependentUpon>
-	  </Compile>
+	  <Folder Include="Services\" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Pages\ManageOrdersPage.xaml">
+	  <MauiXaml Update="Views\ManageOrdersView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

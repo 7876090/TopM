@@ -1,11 +1,11 @@
-﻿using TopM.Models;
+﻿using TopM.ViewModels;
 
 namespace TopM;
 
 public partial class MainPage : ContentPage
 {
 
-	public MainPage(MainPageModel ctx)
+	public MainPage(MainPageViewModel ctx)
 	{
 		InitializeComponent();
 		BindingContext = ctx;

@@ -2,8 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TopM.MainPage"
-             xmlns:viewmodel="clr-namespace:TopM.Models"
-             x:DataType="viewmodel:MainPageModel">
+             xmlns:viewmodel="clr-namespace:TopM.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel">
 
     <Grid ColumnDefinitions=".40*, .60*"
           BackgroundColor="LightGray">
@@ -13,8 +13,8 @@
                 Padding="10">
 
             <Button Text="Управление сменами"
-                        Style="{StaticResource buttonMainPage}"
-                    Command="{Binding GoToManageOrdersPageCommand}}"/>
+                    Style="{StaticResource buttonMainPage}"
+                    Command="{Binding GoToManageOrdersPageCommand}"/>
 
             <Button Text="Отчеты и дубликаты"
                         class="buttonMainPage"

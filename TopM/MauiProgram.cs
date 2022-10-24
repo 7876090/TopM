@@ -1,5 +1,5 @@
-﻿using TopM.Models;
-using TopM.Pages;
+﻿using TopM.ViewModels;
+using TopM.Views;
 
 namespace TopM;
 
@@ -17,10 +17,10 @@ public static class MauiProgram
 			});
 
 		builder.Services.AddSingleton<MainPage>();
-		builder.Services.AddSingleton<MainPageModel>();
+		builder.Services.AddSingleton<MainPageViewModel>();
 
-		builder.Services.AddTransient<ManageOrdersPage>();
-        builder.Services.AddTransient<ManageOrdersPageModel>();
+		builder.Services.AddTransient<ManageOrdersView>();
+        builder.Services.AddTransient<ManageOrdersViewModel>();
 
 		return builder.Build();
 	}

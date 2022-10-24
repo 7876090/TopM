@@ -14,4 +14,15 @@
         <Setter Property="LineBreakMode" Value="CharacterWrap"/>
     </Style>
 
+    <Style x:Key="buttonRoundPlusMinus" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="White"/>
+        <Setter Property="TextColor" Value="RoyalBlue"/>
+        <Setter Property="FontSize" Value="50"/>
+        <Setter Property="BorderColor" Value="RoyalBlue"/>
+        <Setter Property="BorderWidth" Value="3"/>
+        <Setter Property="CornerRadius" Value="100"/>
+        <Setter Property="WidthRequest" Value="100"/>
+        <Setter Property="HeightRequest" Value="100"/>
+    </Style>
+    
 </ResourceDictionary>
