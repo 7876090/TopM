@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <Style x:Key="buttonMainPage" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="White"/>
+        <Setter Property="TextColor" Value="RoyalBlue"/>
+        <Setter Property="FontSize" Value="26"/>
+        <Setter Property="BorderColor" Value="RoyalBlue"/>
+        <Setter Property="BorderWidth" Value="3"/>
+        <Setter Property="CornerRadius" Value="30"/>
+        <Setter Property="LineBreakMode" Value="CharacterWrap"/>
+    </Style>
+
+    <Style x:Key="buttonRoundPlusMinus" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="White"/>
+        <Setter Property="TextColor" Value="RoyalBlue"/>
+        <Setter Property="FontSize" Value="50"/>
+        <Setter Property="BorderColor" Value="RoyalBlue"/>
+        <Setter Property="BorderWidth" Value="3"/>
+        <Setter Property="CornerRadius" Value="100"/>
+        <Setter Property="WidthRequest" Value="100"/>
+        <Setter Property="HeightRequest" Value="100"/>
+    </Style>
+    
+</ResourceDictionary>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TopM.Views.ManageOrdersView"
+             Title="Управление сменами"
+             xmlns:viewmodel="clr-namespace:TopM.ViewModels"
+             x:DataType="viewmodel:ManageOrdersViewModel">
+
+    <Grid ColumnDefinitions=".40*, .60*"
+          RowDefinitions=".08*, .90*">
+
+        <Label Text="Количество монет"
+               HorizontalOptions="Center"
+               FontSize="24"/>
+
+        <Grid ColumnDefinitions=".50*, .50*"
+              Grid.Row="1">
+
+            <Grid RowDefinitions=".25*, .25*, .25*, .25*"
+                  RowSpacing="20"
+                  Padding="5">
+
+                <Button Text="-"
+                        Style="{StaticResource buttonRoundPlusMinus}"/>
+
+                <Label Text="0 Р"
+                       Grid.Row="1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="24"
+                       x:Name="labelCount1"/>
+
+                <Button Text="+"
+                        Style="{StaticResource buttonRoundPlusMinus}"
+                        Grid.Row="2"
+                        x:Name="buttonCount1Plus"/>
+
+                <Button Text="1 Р"
+                        Grid.Row="3"
+                        CornerRadius="30"
+                        BackgroundColor="RoyalBlue"
+                        TextColor="White"
+                        FontSize="24"
+                        BorderWidth="3"/>
+
+
+            </Grid>
+
+            <Grid RowDefinitions=".25*, .25*, .25*, .25*"
+                  RowSpacing="20"
+                  Padding="5"
+                  Grid.Column="1">
+
+                <Button Text="-"
+                        Style="{StaticResource buttonRoundPlusMinus}"/>
+
+                <Label Text="0"
+                       Grid.Row="1"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="24"/>
+
+                <Button Text="+"
+                        Style="{StaticResource buttonRoundPlusMinus}"
+                        Grid.Row="2"/>
+
+                <Button Text="10 Р"
+                        Grid.Row="3"
+                        CornerRadius="30"
+                        BackgroundColor="RoyalBlue"
+                        TextColor="White"
+                        FontSize="24"
+                        BorderWidth="3"/>
+
+
+            </Grid>
+
+        </Grid>
+
+        <Label Text="Остаток монетами 1 Р"
+               Grid.Column="1"
+               Grid.Row="0"
+               HorizontalOptions="Center"
+               FontSize="24"/>
+
+        <Grid RowDefinitions=".25*, .25*, .25*, .25*"
+              Grid.Column="1"
+              Grid.Row="1"
+              RowSpacing="20"
+              Padding="5">
+
+            <Label Text="0 Р"
+                   HorizontalOptions="Fill"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   VerticalOptions="Center"
+                   FontSize="24"
+                   BackgroundColor="RoyalBlue"
+                   HeightRequest="100"/>
+
+            <Label Text="Остаток монетами 10 Р"
+                   Grid.Row="1"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="24"/>
+
+            <Label Text="0 Р"
+                   Grid.Row="2"
+                   HorizontalOptions="Fill"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center"
+                   VerticalOptions="Center"
+                   FontSize="24"
+                   BackgroundColor="RoyalBlue"
+                   HeightRequest="100"/>
+
+            <Button Text="Открыть смену"
+                    Grid.Row="3"
+                        CornerRadius="30"
+                        BackgroundColor="RoyalBlue"
+                        TextColor="White"
+                        FontSize="24"
+                        BorderWidth="3"/>
+
+        </Grid>
+
+    </Grid>
+
+</ContentPage>

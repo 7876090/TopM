@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TopM.MainPage"
+             xmlns:viewmodel="clr-namespace:TopM.ViewModels"
+             x:DataType="viewmodel:MainPageViewModel">
+
+    <Grid ColumnDefinitions=".40*, .60*"
+          BackgroundColor="LightGray">
+
+        <VerticalStackLayout
+                Spacing="10"
+                Padding="10">
+
+            <Button Text="Управление сменами"
+                    Style="{StaticResource buttonMainPage}"
+                    Command="{Binding GoToManageOrdersPageCommand}"/>
+
+            <Button Text="Отчеты и дубликаты"
+                        class="buttonMainPage"
+                        Style="{StaticResource buttonMainPage}"/>
+
+            <Button Text="Настройки"
+                        class="buttonMainPage"
+                        Style="{StaticResource buttonMainPage}"/>
+
+            <Button Text="О программе"
+                        class="buttonMainPage"
+                        Style="{StaticResource buttonMainPage}"/>
+
+        </VerticalStackLayout>
+
+        <Image Source="logo.png"
+               Grid.Column="2"
+               HorizontalOptions="Center"
+               VerticalOptions="Center"/>
+
+    </Grid>
+
+</ContentPage>
