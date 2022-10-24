@@ -1,4 +1,7 @@
-﻿namespace TopM;
+﻿using TopM.Models;
+using TopM.Pages;
+
+namespace TopM;
 
 public static class MauiProgram
 {
@@ -12,6 +15,12 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
+
+		builder.Services.AddSingleton<MainPage>();
+		builder.Services.AddSingleton<MainPageModel>();
+
+		builder.Services.AddTransient<ManageOrdersPage>();
+        builder.Services.AddTransient<ManageOrdersPageModel>();
 
 		return builder.Build();
 	}

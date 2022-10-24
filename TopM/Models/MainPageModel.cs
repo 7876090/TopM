@@ -1,5 +1,7 @@
 ﻿
 using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
+using TopM.Pages;
 
 namespace TopM.Models
 {
@@ -9,5 +11,10 @@ namespace TopM.Models
         public MainPageModel()
         { }
 
+        [RelayCommand]
+        async Task GoToManageOrdersPage()
+        {
+            await Shell.Current.GoToAsync($"{nameof(ManageOrdersPage)}");
+        }
     }
 }
